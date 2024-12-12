@@ -38,17 +38,30 @@ const About = () => {
         />
 
         <div className="about-subtext">
-          <p>The Game of Games begins-your life, now an epic MMORPG</p>
-          <p>Zentry unites every player from countless games and platforms</p>
+          <p className="font-semibold text-gray-800">
+            The Game of Games begins--your life, now an epic MMORPG
+          </p>
+          <p className="text-gray-500 leading-none">
+            Zentry unites every player from countless games and platforms, both
+            digital and physical, into a unified Play Economy
+          </p>
+        </div>
+
+        <div className="absolute left-0 -bottom-[520px] w-screen h-[550px] z-20">
+          <img
+            src="img/stones.webp"
+            alt="Background"
+            className="size-full object-cover"
+          />
         </div>
       </div>
 
       <div className="h-dvh w-screen" id="clip">
-        <div className="mask-clip-path about-image">
+        <div className="mask-clip-path about-image border-[2px] border-gray-700 overflow-hidden">
           <img
             src="img/about.webp"
             alt="Background"
-            className="absolute left-0 top-0 size-full object-cover"
+            className="absolute left-0 top-0 size-full object-cover z-10"
           />
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
+import ComingSoonButton from "./ComingSoonButton";
 
 const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -59,6 +60,8 @@ const BentoCard = ({ src, title, description }) => {
             <p className="mt-3 max-w-64 text-xs md:text-base">{description} </p>
           )}
         </div>
+
+        <ComingSoonButton />
       </div>
     </div>
   );
@@ -112,7 +115,7 @@ const Features = () => {
                   ne<b>x</b>us
                 </>
               }
-              description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+              description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
             />
           </BentoTilt>
 
